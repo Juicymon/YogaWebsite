@@ -1,0 +1,50 @@
+{
+  "name": "@fxp/jquery-ripple",
+  "version": "1.0.2",
+  "license": "MIT",
+  "author": "François Pluchino <francois.pluchino@gmail.com>",
+  "contributors": [],
+  "description": "A material design ripple effect for jquery",
+  "keywords": [
+    "material",
+    "design",
+    "ripple",
+    "effect",
+    "jquery"
+  ],
+  "homepage": "https://github.com/fxpio/fxp-jquery-ripple",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fxpio/fxp-jquery-ripple.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fxpio/fxp-jquery-ripple/issues"
+  },
+  "scripts": {
+    "dev": "encore dev",
+    "serve": "encore dev-server --port 9000",
+    "build:style": "sass --no-source-map scss/ripple.scss dist/ripple.css",
+    "build:module": "rollup -c",
+    "build": "yarn run build:module && yarn run build:style"
+  },
+  "engines": {},
+  "main": "js/ripple.js",
+  "dependencies": {
+    "@fxp/jquery-pluginify": "github:fxpio/fxp-jquery-pluginify#semver:^1.0.0",
+    "jquery": "^2.2.0||^3.2.0"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^1.1.0",
+    "file-loader": "^6.0.0",
+    "bootstrap": "^3.4.1",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-uglify": "^6.0.2",
+    "sass": "^1.32.7",
+    "sass-loader": "^11.0.1"
+  }
+}

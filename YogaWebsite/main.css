@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Centaur;
+}
+
+body{
+    /*
+    background-color: #f7f2e7;
+     */
+    background-color: #d8d3cd;
+}
+
+h1, h2, h3, h4{
+    font-family: Bradley Hand ITC;
+}
+
+footer{
+    background-color: #E7CBAE;
+    padding:5px;
+    margin: auto;
+    border-top: #8B694D solid 2pt;
+}
+
+
+/*------styling is for the navigation bar------*/
+.top-nav{
+    z-index: 50;
+    background-color: #E7CBAE;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 1.5em;
+    align-items: center;
+    border-bottom: #8B694D solid 2pt;
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 99%;
+    height:50px;
+}
+
+.top-nav-list{
+    list-style-type: none;
+}
+.top-nav-list .top-list-item{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.top-nav a{
+    padding: 10px;
+    color: black;
+    border-left: #8B694D solid 2pt;
+    border-right: #8B694D solid 2pt;
+    text-decoration: none;
+}
+.top-nav a:hover{
+    color:#E7CBAE;
+    background-color: #8B694D;
+}
+
+.top-nav div a{
+    border: none;
+}
+/*------General page styling to keep pages and elements consistent------*/
+.default-pg-lyt{
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    align-items: center;
+    background-color: #FAF5EF;
+}
+.default-btn-style{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1em;
+}
+.default-btn-style a {
+    color: black;
+    text-decoration: none;
+}
+
+.page-head{
+    background-color: #E7CBAE;
+    border-bottom: #8B694D solid 2pt;
+    padding: 20px 0;
+    font-size: 2.5em;
+    margin-top:70px;
+    text-align: center;
+}
+
+/*------styling is for the home page------*/
+
+#home-banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    padding: 90px;
+    margin-top: 45px;
+}
+#home-banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("./images/home-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+#banner-text{
+    position: relative;
+    text-align: center;
+}
+#welcome-msg{
+    background-color: #E7CBAE;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    border-top: #8B694D solid 2pt;
+    border-bottom: #8B694D solid 2pt;
+    line-height: 1.5em;
+}
+.home-container{ /* General styling for home div content */
+    padding: 15pt 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: #8B694D solid 1pt;
+    font-size: 1.1em;
+}
+
+#home-yoga-types button{
+    position: relative;
+    top: 55px;
+}
+#home-yoga-types h2 {
+    position: relative;
+    top: 45px;
+}
+#home-yoga-types p{
+    position: relative;
+    width: 50%;
+    left: 5%;
+    top: 55px;
+    line-height: 1.6em;
+}
+
+#yoga-types-img {
+    margin: 10px 60px;
+    width: 300px;
+    height: auto;
+    float: right;
+    border: #8B694D solid 2pt;
+}
+#home-events{
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+}
+#home-events p{
+    padding-top: 10px;
+    position: relative;
+    width: 50%;
+    left: 25%;
+    line-height: 1.6em;
+}
+#home-instruct p{
+    position: relative;
+    line-height: 1.6em;
+    overflow: hidden;
+    width: 55%;
+    left: 2%;
+    padding-top: 10px;
+}
+#home-instructor-img{
+    width: 300px;
+    height: auto;
+    float: left;
+    margin: 10px 30px;
+    border: #8B694D solid 2pt;
+}
+
+/*------styling for the types of yoga page------*/
+.types-offered, .types-not-offered{
+    padding: 15px 25px;
+}
+
+.types-not-offered p, .types-offered p {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    border-bottom: #8B694D dashed 2pt;
+    text-indent: 20px;
+    font-size: 1.2em;
+}
+.types-offered h3, .types-not-offered h3 {
+    padding-top: 10px;
+    padding-left: 35px;
+    line-height: 1.4;
+    font-size: 1.5em;
+    margin: 10px 0px;
+}
+.types-offered p:last-child{
+    border-bottom: #8B694D solid 2pt;
+}
+.types-not-offered p:last-child{
+    border: none;
+}
+
+.types-offered h2, .types-not-offered h2{
+    font-size: 1.9em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*------Styling for the events page------*/
+#evt-accordion .ui-accordion-content, .evt-accordion2 .ui-accordion-content{
+    background-color: #FAF5EF;
+}
+
+#evt-accordion .ui-accordion-header:not(.evt-accordion2 .ui-accordion-header) {
+    background-color: #8B694D;
+    color: whitesmoke;
+}
+.evt-accordion2 p {
+    font-size: .9em;
+}
+
+.evt-accordion2 .ui-accordion-header:hover{
+    color: saddlebrown;
+}
+.evt-accordion2 .ui-accordion-header{
+   background-color: #E7CBAE;
+   margin-top: 20px;
+}
+
+#evt-accordion .ui-state-active{
+    border: saddlebrown 1.2pt solid;
+}
+.evt-accordion2 .ui-state-active, .evt-accordion2 .ui-state-active .ui-icon{
+    color: black;
+    border: saddlebrown 1pt dashed;
+}
+
+#evt-accordion button{
+    float: right;
+    font-family: Centaur;
+}
+
+#evt-accordion span{
+    display: inline-block;
+    margin: 2px 30px;
+    font-size: .9em;
+}
+
+#evt-accordion{
+    width: 1050px;
+    height: auto;
+}
+
+.events-pg{
+    font-size: 1.5em;
+}
+
+#event-header{
+    padding: 40px;
+}
+#thank-message{
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+#thank-message-content{
+    background-color: #FAF5EF;
+    margin: 15% auto;
+    width: 30%;
+    height: auto;
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#sign-up-popup{
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+
+#popup-content{
+    background-color: #FAF5EF;
+    margin: 15% auto;
+    width: 30%;
+    height: auto;
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 25px;
+}
+#popup-content input[type=text] {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    font-size: .6em;
+    margin: 5px 0 22px 0;
+    background: #fafafa;
+}
+
+#popup-content h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px 0 50px 0;
+    text-decoration: underline;
+}
+
+.form-btns{
+    text-align: center;
+}
+
+
+/*------styling is for the Contact Page------*/
+.instructors-div p{
+    overflow: hidden;
+    width: 60%;
+    position: relative;
+    padding: 10px;
+    top: 20px;
+    text-indent: 30px;
+    font-size: 1.2em;
+}
+.instructors-div h2, .instructors-div h3{
+    padding: 2px;
+    position: relative;
+    left: 85px;
+}
+
+.instruct-imgs{
+    width: 300px;
+    height: auto;
+    float: left;
+    display: inline-block;
+    margin: 10px 20px;
+    border: #8B694D solid 2pt;
+}
+
+/*------Styling for the pricing page------*/
+.pricing-pg{
+
+}
+#pricing-img{
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    float: left;
+    border: #8B694D solid 2pt;
+    margin: 10px 15px 20px;
+}
+
+#prices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Basic example - Fxp Jquery Ripple</title>
+    <link href="main.css" rel="stylesheet">
+    <style>
+        .panel-primary .panel-heading {
+            background: #1768AF;
+            border-bottom-color: #5B8FBB;
+        }
+        .panel-primary .list-group-item {
+            border-top-color: #5B8FBB;
+        }
+        .panel-primary .list-group,
+        .panel-primary .list-group-item,
+        .panel-primary .list-group-item a,
+        .panel-primary .panel-body {
+            background: #337ab7;
+            color: #ffffff;
+        }
+
+        .list-group-item > span {
+            display: block;
+        }
+
+        .circle-example {
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+        }
+        .panel-primary .circle-example {
+            background: #337ab7;
+            border-color: #5b8fbb;
+        }
+    </style>
+</head>
+
+<body>
+<div class="navbar navbar-default has-nav-scrollable navbar-static-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">Brand</a>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Ripple light</div>
+                <ul class="list-group">
+                    <li class="list-group-item" data-ripple><a href="#">Cras justo odio</a></li>
+                    <li class="list-group-item" data-ripple><span>Dapibus ac facilisis in</span></li>
+                    <li class="list-group-item" data-ripple>Morbi leo risus</li>
+                    <li class="list-group-item" data-ripple>Porta ac consectetur ac</li>
+                    <li class="list-group-item" data-ripple>Vestibulum at eros</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-primary" data-ripple data-ripple-theme="dark" data-ripple-selector="> .list-group > .list-group-item">
+                <div class="panel-heading">Ripple dark with delegate click event</div>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Cras justo odio</a></li>
+                    <li class="list-group-item"><span>Dapibus ac facilisis in</span></li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">Ripple light with border radius</div>
+                <div class="panel-body">
+                    <div class="circle-example" data-ripple data-ripple-theme="light">
+                        Foo
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Ripple dark with border radius</div>
+                <div class="panel-body">
+                    <div class="circle-example" data-ripple data-ripple-theme="dark">
+                        Foo
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="main.js" async="async"></script>
+</body>
+</html>

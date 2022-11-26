@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link  rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src = "auto-hiding-sticky-navbar/dist/scroll-up-bar.min.js"></script>
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <nav class="top-nav">
+        <div><a href=index.html>Boodha Yoga</a></div>
+        <ul class="top-nav-list">
+            <li class="top-list-item"><a href=index.html>Home</a></li>
+            <li class="top-list-item"><a href=types-of-yoga.html>Types of Yoga</a></li>
+            <li class="top-list-item"><a href=events.html>Events</a></li>
+            <li class="top-list-item"><a href=contact.html>Contact</a></li>
+            <li class="top-list-item"><a href=pricing.html>Pricing</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-head">
+        <h1>Events</h1>
+    </section>
+
+    <main class="events-pg default-pg-lyt">
+        <h3 id="event-header">Upcoming Classes and Events</h3>
+
+        <div id="evt-accordion">
+            <h3>Monday, Oct. 17</h3>
+            <div>
+                <span>Hatha Yoga</span>
+                <button type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
+                <span>8:00AM to 9:00AM</span>
+                <div class="evt-accordion2">
+                    <h3>+ More Info</h3>
+                    <div>
+                        <p>
+                            Hatha yoga is a practice of channeling the bodies energies to balance the body and mind. The
+                            techniques offered in this style often focus on the use of postures and breathing techniques
+                            to reach this equilibrium. Expect a beginner experience that will help learn basics
+                            for future yoga courses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Wednesday, Oct. 19</h3>
+            <div>
+                <span>Slow Flow Yoga</span>
+                <button type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
+                <span>10:00AM to 11:00AM</span>
+                <div class="evt-accordion2">
+                    <h3>+ More Info</h3>
+                    <p>
+                        Slow Flow yoga is exactly as it sounds, a series of slow fluid postures and sequences of movements.
+                        This class places an emphasis on holding poses longer and focusing more on movement and breath, flowing
+                        from one set of postures to another. Beginners are welcome and encouraged, but some sets of movements
+                        can be vigorous and demanding.
+                    </p>
+                </div>
+            </div>
+
+            <h3>Friday, Oct. 21</h3>
+            <div>
+                <span>Gentle Yoga</span>
+                <button type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
+                <span>8:00AM to 9:00AM</span>
+                <div class="evt-accordion2">
+                    <h3>+ More Info</h3>
+                   <p>
+                        Gentle yoga is a slower paced, restorative yoga meant to relax the body and reduce stress. Including
+                        less intense positions including time for meditation and breath work. Comparative to an easier Hatha,
+                        this class is also great for beginners.
+                   </p>
+                </div>
+            </div>
+
+            <h3>Satuday, Oct. 22</h3>
+            <div>
+                <span>Chair Yoga</span>
+                <button type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
+                <span>3:00PM to 4:00PM</span>
+                <div class="evt-accordion2">
+                    <h3>+ More Info</h3>
+                    <p>
+                        Another style that matches its name, chair yoga is an adaptation of different movements and poses that
+                        can be done while seated. Chair yoga can help increase mobility, increase blood flow, reduce stress,
+                        stretch the body, and clear the mind. These course are welcome to all and are especially created for
+                        the elderly and those with physical disability.
+                    </p>
+                </div>
+            </div>
+
+            <h3>Monday, Oct. 24</h3>
+            <div>
+                <span>Deep Stretch Yoga</span>
+                <button type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
+                <span>10:00AM to 11:00AM</span>
+                <div class="evt-accordion2">
+                    <h3>+ More Info</h3>
+                    <p>
+                        Deep stretch focuses on releasing tight muscles and tendons, while reducing stress on the skeletal
+                        structure. These classes target muscle groups in the hips, hamstrings, and upper back. These course can
+                        be highly intensive for core work and are targeted more towards intermediate or more experienced
+                        Yogi.
+                    </p>
+                </div>
+            </div>
+
+            <h3>Wednesday, Oct. 26</h3>
+            <div>
+                <span>Restorative Yoga</span>
+                <button type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
+                <span>5:00PM to 6:00PM</span>
+                <div class="evt-accordion2">
+                    <h3>+ More Info</h3>
+                    <p>
+                        Restorative yoga is a restful practice that involves passively holding poses and focusing on breathing
+                        to help relieve tension from your body. Relaxing the mind and body in these course helps the body rest,
+                        heal, and restore balance. This class is very helpful for beginners and advanced Yogi alike.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="sign-up-popup">
+            <div id="popup-content">
+                <h3></h3>
+                <label for="name">Name:</label>
+                <input id="name" type="text" placeholder="Enter Your Name">
+                <label for="email">Email:</label>
+                <input id="email" type="text" placeholder="Enter Your Email">
+                <label for="phone">Phone: </label>
+                <input type="text" id="phone" placeholder="Enter Your Phone #">
+                <div class="form-btns">
+                    <input type="submit" value="Submit" class="default-btn-style" id="sign-up-form-btn">
+                    <button id="close-popup" class="default-btn-style">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="thank-message">
+            <div id="thank-message-content">
+                <p>Thanks for signing up for class!</p>
+                <p>Payment and session details have been sent to your email.</p>
+                <button id="close" class="default-btn-style">Close</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h3>Placeholder for footer content</h3>
+    </footer>
+</body>
+</html>
