@@ -4,22 +4,71 @@
     font-family: Centaur;
 }
 
+html{
+    height: 100%;
+}
+
 body{
-    /*
-    background-color: #f7f2e7;
-     */
+
     background-color: #d8d3cd;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2, h3, h4{
     font-family: Bradley Hand ITC;
 }
 
+.checkEvents{
+    margin: 2em 1em;
+    border-top: #8B694D solid 2pt;
+    border-bottom: #8B694D solid 2pt;
+    width: 80%;
+    text-align: center;
+    padding: 2em 1em;
+}
+.checkEvents button{
+    font-size: 1.4em;
+    padding: .6em .9em;
+}
+
+/*----------Styling for the Footer-------- */
 footer{
     background-color: #E7CBAE;
     padding:5px;
-    margin: auto;
+    margin-top: auto;
     border-top: #8B694D solid 2pt;
+    font-size: 1.2em;
+}
+
+#bottom-footer{
+    margin: 1em;
+    text-align: center;
+}
+
+#footer-links{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#footer-links a{
+    text-decoration: none;
+    color: black;
+    border-left: #8B694D solid 2pt;
+    border-right: #8B694D solid 2pt;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 1em;
+}
+
+#footer-links a:hover{
+    color:#E7CBAE;
+    background-color: #8B694D;
+    border-radius: .5em;
 }
 
 
@@ -55,12 +104,24 @@ footer{
     text-decoration: none;
 }
 .top-nav a:hover{
+    border-radius: .5em;
     color:#E7CBAE;
     background-color: #8B694D;
 }
 
 .top-nav div a{
     border: none;
+    font-size: 1.5em;
+}
+
+.top-nav div a:hover{
+    color: inherit;
+    background-color: inherit;
+}
+
+#yogaLogo{
+    height: auto;
+    width: 20%;
 }
 /*------General page styling to keep pages and elements consistent------*/
 .default-pg-lyt{
@@ -75,15 +136,18 @@ footer{
     background-color: #FAF5EF;
 }
 .default-btn-style{
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
     font-size: 1em;
+    cursor: default;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    background-color: rgba(200,200,150,40%);
 }
-.default-btn-style a {
-    color: black;
-    text-decoration: none;
+.default-btn-style:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.24);
 }
-
 .page-head{
     background-color: #E7CBAE;
     border-bottom: #8B694D solid 2pt;
@@ -234,9 +298,11 @@ footer{
 #evt-accordion .ui-accordion-header:not(.evt-accordion2 .ui-accordion-header) {
     background-color: #8B694D;
     color: whitesmoke;
+    font-size: 1.1em;
 }
 .evt-accordion2 p {
     font-size: .9em;
+    line-height: 1.5em;
 }
 
 .evt-accordion2 .ui-accordion-header:hover{
@@ -263,7 +329,6 @@ footer{
 #evt-accordion span{
     display: inline-block;
     margin: 2px 30px;
-    font-size: .9em;
 }
 
 #evt-accordion{
@@ -272,11 +337,12 @@ footer{
 }
 
 .events-pg{
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 #event-header{
     padding: 40px;
+    font-size: 1.5em;
 }
 #thank-message{
     display: none;
@@ -342,19 +408,34 @@ footer{
 
 
 /*------styling is for the Contact Page------*/
+.instructors-pg{
+    padding: 20px;
+
+}
 .instructors-div p{
     overflow: hidden;
     width: 60%;
     position: relative;
-    padding: 10px;
-    top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-indent: 30px;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    border-left: #8B694D double 4pt;
+    border-right: #8B694D double 4pt;
 }
 .instructors-div h2, .instructors-div h3{
-    padding: 2px;
+    padding: 5px;
     position: relative;
-    left: 85px;
+    left: 65px;
+}
+
+.instructors-div h2{
+    font-size: 2em;
+}
+
+.instructors-div h3{
+    font-size: 1.5em;
 }
 
 .instruct-imgs{
@@ -366,17 +447,33 @@ footer{
     border: #8B694D solid 2pt;
 }
 
+.instructors-div{
+    border-bottom: #8B694D dashed 2pt;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+
 /*------Styling for the pricing page------*/
 .pricing-pg{
 
 }
+
+.removeBullet{
+    list-style-type: none;
+}
+
+.price-div{
+    padding: 10px;
+}
+
 #pricing-img{
     display: inline-block;
     width: 400px;
     height: auto;
     float: left;
     border: #8B694D solid 2pt;
-    margin: 10px 15px 20px;
+    margin-bottom: 10px;
+    margin-right: 40px;
 }
 
 #prices{
@@ -384,7 +481,14 @@ footer{
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 50px;
+    font-size: 1.15em;
+    border-left: #8B694D double 4pt;
+    border-right: #8B694D double 4pt;
+    top: 15px;
+    padding: 0 20px;
 }
 
+#prices h2{
+    text-decoration: underline;
+}
 

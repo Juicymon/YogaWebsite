@@ -1,0 +1,56 @@
+{"stylesOffered": [
+  {
+    "name": "-Hatha-",
+    "description": "Hatha yoga is a practice of channeling the bodies energies to balance the body and mind. The techniques offered in this style often focus on the use of postures and breathing techniques to reach this equilibrium. Expect a beginner experience that will help learn basics for future yoga courses."
+  },
+  {
+    "name": "-Gentle Yoga-",
+    "description": "Gentle yoga is a slower paced, restorative yoga meant to relax the body and reduce stress. Including less intense positions including time for meditation and breath work. Comparative to an easier Hatha, this class is also great for beginners."
+  },
+  {
+    "name": "-Slow Flow-",
+    "description": "Slow Flow yoga is exactly as it sounds, a series of slow fluid postures and sequences of movements. This class places an emphasis on holding poses longer and focusing more on movement and breath, flowing from one set of postures to another. Beginners are welcome and encouraged, but some sets of movements can be vigorous and demanding."
+  },
+  {
+    "name": "-Deep Stretch-",
+    "description": "Deep stretch focuses on releasing tight muscles and tendons, while reducing stress on the skeletal structure. These classes target muscle groups in the hips, hamstrings, and upper back. These course can be highly intensive for core work and are targeted more towards intermediate or more experienced Yogi."
+  },
+  {
+    "name": "-Chair Yoga-",
+    "description": "Another style that matches its name, chair yoga is an adaptation of different movements and poses that can be done while seated. Chair yoga can help increase mobility, increase blood flow, reduce stress, stretch the body, and clear the mind. These course are welcome to all and are especially created for the elderly and those with physical disability."
+  },
+  {
+    "name": "-Restorative Yoga-",
+    "description": "Restorative yoga is a restful practice that involves passively holding poses and focusing on breathing to help relieve tension from your body. Relaxing the mind and body in these course helps the body rest, heal, and restore balance. This class is very helpful for beginners and advanced Yogi alike."
+  }
+],
+"stylesNotOffered": [
+  {
+    "name": "-Vinyasa-",
+    "description": "Vinyasa is a type of flow yoga that strings postures together seamlessly using deep breaths. Classes will often include a range of standing, twists, balancing, forward folds, inversions, bends, and core strengthening poses that culminate into a deep sense of mindfulness and connect with oneself."
+  },
+  {
+    "name": "-Power Flow-",
+    "description": "Power flow is an energetic form of yoga where fluidity to move from one pose to the next while connecting breathing to movements is key. These movements help cultivate balance, stability, flexibility, and vigor. Additionally, these courses are taught in heated environments to create a more vigorous and revitalizing form of fitness that forces a focus on breathing."
+  },
+  {
+    "name": "-Aerial Yoga-",
+    "description": "Aerial yoga uses hammocks or swings to allow students to perform postures and movements that cannot normally be done on a mat. Utilizes both traditional yoga and acrobatic movements to strengthen and stretch the whole body, decompress the spine, and improve circulation."
+  },
+  {
+    "name": "-Kundalini-",
+    "description": "Kundalini is a yoga style that activates your Kundalini energy through the use of chanting, singing, breathing exercises, and repetitive poses. Kundalini improves your self-awareness and consciousness, energizes the body, and provides a sense of strength."
+  },
+  {
+    "name": "-Ashtanga-",
+    "description": "Ashtanga is a dynanmic and athletic form of Hatha yoga that connects the movement of the body with the breath. This form stresses the importance of daily practice of a set of movements that can be rigorous and demanding but promote a high outcome of overall strength and health."
+  },
+  {
+    "name": "-Yin Yoga-",
+    "description": "Yin yoga is a slower-paced and meditative discipline of yoga. Poses are held for long periods of time to target connective tissues rather than building muscle. These poses primarily work the lower part of the body in the hips, pelvis, inner thighs, and lower spine."
+  },
+  {
+    "name": "-Aqua Yoga-",
+    "description": "Aqua yoga involves performing poses in the water. It is gentle and low impact that allows more accessibility over other forms of yoga. The movements and poses used by this style are relaxing, soothing, and more restorative."
+  }
+]}

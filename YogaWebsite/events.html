@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>Events</title>
     <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link  rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="ripple-click-effect-fxp/dist/ripple.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src = "auto-hiding-sticky-navbar/dist/scroll-up-bar.min.js"></script>
+    <script src="ripple-click-effect-fxp/dist/ripple.js"></script>
     <script src="main.js"></script>
 
 </head>
@@ -19,7 +21,7 @@
             <li class="top-list-item"><a href=index.html>Home</a></li>
             <li class="top-list-item"><a href=types-of-yoga.html>Types of Yoga</a></li>
             <li class="top-list-item"><a href=events.html>Events</a></li>
-            <li class="top-list-item"><a href=contact.html>Contact</a></li>
+            <li class="top-list-item"><a href=contact.html>Instructors</a></li>
             <li class="top-list-item"><a href=pricing.html>Pricing</a></li>
         </ul>
     </nav>
@@ -32,10 +34,10 @@
         <h3 id="event-header">Upcoming Classes and Events</h3>
 
         <div id="evt-accordion">
-            <h3>Monday, Oct. 17</h3>
+            <h3 class="date"></h3>
             <div>
                 <span>Hatha Yoga</span>
-                <button type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
+                <button data-ripple data-ripple-theme="light" type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
                 <span>8:00AM to 9:00AM</span>
                 <div class="evt-accordion2">
                     <h3>+ More Info</h3>
@@ -50,10 +52,10 @@
                 </div>
             </div>
 
-            <h3>Wednesday, Oct. 19</h3>
+            <h3 class="date"></h3>
             <div>
                 <span>Slow Flow Yoga</span>
-                <button type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
+                <button data-ripple data-ripple-theme="light" type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
                 <span>10:00AM to 11:00AM</span>
                 <div class="evt-accordion2">
                     <h3>+ More Info</h3>
@@ -66,10 +68,10 @@
                 </div>
             </div>
 
-            <h3>Friday, Oct. 21</h3>
+            <h3 class="date"></h3>
             <div>
                 <span>Gentle Yoga</span>
-                <button type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
+                <button data-ripple data-ripple-theme="light" type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
                 <span>8:00AM to 9:00AM</span>
                 <div class="evt-accordion2">
                     <h3>+ More Info</h3>
@@ -81,10 +83,10 @@
                 </div>
             </div>
 
-            <h3>Satuday, Oct. 22</h3>
+            <h3 class="date"></h3>
             <div>
                 <span>Chair Yoga</span>
-                <button type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
+                <button data-ripple data-ripple-theme="light" type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
                 <span>3:00PM to 4:00PM</span>
                 <div class="evt-accordion2">
                     <h3>+ More Info</h3>
@@ -97,10 +99,10 @@
                 </div>
             </div>
 
-            <h3>Monday, Oct. 24</h3>
+            <h3 class="date"></h3>
             <div>
                 <span>Deep Stretch Yoga</span>
-                <button type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
+                <button data-ripple data-ripple-theme="light" type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
                 <span>10:00AM to 11:00AM</span>
                 <div class="evt-accordion2">
                     <h3>+ More Info</h3>
@@ -113,10 +115,10 @@
                 </div>
             </div>
 
-            <h3>Wednesday, Oct. 26</h3>
+            <h3 class="date"></h3>
             <div>
                 <span>Restorative Yoga</span>
-                <button type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
+                <button data-ripple data-ripple-theme="light" type="button" class="default-btn-style sign-up-btn">Sign Up</button><br>
                 <span>5:00PM to 6:00PM</span>
                 <div class="evt-accordion2">
                     <h3>+ More Info</h3>
@@ -157,7 +159,18 @@
     </main>
 
     <footer>
-        <h3>Placeholder for footer content</h3>
+        <div class="footer-content">
+            <div>
+                <ul id="footer-links">
+                    <li> <a href ="index.html">Home</a> </li>
+                    <li> <a href ="types-of-yoga.html">Types of Yoga</a> </li>
+                    <li> <a href ="events.html">Events</a> </li>
+                    <li> <a href ="contact.html">Instructors</a> </li>
+                    <li> <a href ="pricing.html">Pricing</a> </li>
+                </ul>
+            </div>
+            <div id="bottom-footer"> <p> Copyright &copy;2022 Boodha Yoga. Designed by Joseph Steiger.</p></div>
+        </div>
     </footer>
 </body>
 </html>
